@@ -1,0 +1,827 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 20px;
+}
+
+/*************************************************** Header/Navber ***************************************/
+
+header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 75px;
+    font-family: sans-serif;
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    user-select: none;
+}
+
+.navbar .logo img {
+    width: 170px;
+    height: 45px;
+}
+
+.navbar .nav_links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    height: 100%;
+}
+
+.navbar .nav_links li {
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.navbar .nav_links :hover {
+    transform: scale(1.2);
+}
+
+.navbar .nav_btns {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    height: 100%;
+    user-select: none;
+}
+
+.navbar .nav_btns :hover {
+    transform: scale(1.1);
+}
+
+.navbar .nav_btns img {
+    height: 30px;
+    width: 25px;
+    user-select: none;
+}
+
+.navbar .nav_btns .btn1 {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.navbar .nav_btns .btn2 {
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: none;
+    background: rgb(230, 15, 15);
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/********************************************************************************************************/
+
+/******************************** Body Part 1 With Form And Right Image ********************************/
+.body-pt1 {
+    margin: 30px 50px 50px;
+    padding: 30px 10px 20px 10px;
+    height: 500px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(227, 242, 248);
+    border-radius: 10px;
+}
+
+.body-pt1 .main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.body-pt1 .main-form .hdng-para {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.body-pt1 .main-form h2 {
+    font-size: 40px;
+    user-select: none;
+}
+
+.body-pt1 .main-form h2 span {
+    color: rgb(221, 52, 52);
+}
+
+.body-pt1 .main-form p {
+    font-size: 18px;
+    position: relative;
+    left: 1px;
+    color: rgb(0, 0, 0, 0.8);
+    user-select: none;
+}
+
+.body-pt1 .main-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.body-pt1 .main-form form .Location {
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 16px 0px 14px 40px;
+    background-image: url(Body-Part-1/Location.jpeg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.body-pt1 .main-form form select {
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 16px 0px 14px 38px;
+    background-image: url(Body-Part-1/car-solid.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.body-pt1 .main-form form .checkio {
+    display: flex;
+    gap: 10px;
+}
+
+.body-pt1 .main-form form .checkio input {
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 16px 0px 14px 40px;
+    cursor: pointer;
+}
+
+.body-pt1 .main-form form .checkio ::placeholder {
+    color: rgb(230, 15, 15);
+    user-select: none;
+}
+
+.body-pt1 .main-form form .checkio .inp1 {
+    background-image: url(Body-Part-1/Check-In.jpeg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+}
+
+.body-pt1 .main-form form .checkio .inp2 {
+    background-image: url(Body-Part-1/Check-Out.jpeg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+}
+
+.body-pt1 .main-form button {
+    width: 270px;
+    padding: 13px 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(245, 67, 67);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14.5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.body-pt1 .main-form input:focus {
+    outline: 1px solid rgb(233, 59, 59);
+}
+
+.body-pt1 .main-form select:focus {
+    outline: 1px solid rgb(233, 59, 59);
+}
+
+/* Right Image */
+
+.body-pt1 .image-right img {
+    width: 500px;
+    height: 400px;
+    user-select: none;
+}
+
+/*********************************************************************************************************/
+
+/***************************************** Body Part 2 With 3 Cards ************************************/
+
+.handp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 25px;
+    user-select: none;
+}
+
+.handp h1 {
+    font-size: 41px;
+}
+
+.handp p {
+    font-size: 23px;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.main-3Cards {
+    margin: 45px 50px 50px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-3Cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 15px 15px 0 0;
+    padding: 0 0 20px 0;
+    width: 26%;
+    gap: 20px;
+}
+
+.main-3Cards .card .img1 {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    background-image: url(Body-Part-2-Three-Cards/Car-Parking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-3Cards .card .img2 {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    background-image: url(Body-Part-2-Three-Cards/Truck-Parking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-3Cards .card .img3 {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    background-image: url(Body-Part-2-Three-Cards/Airport-Parking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-3Cards .card .bandh {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    gap: 65px;
+    user-select: none;
+}
+
+.main-3Cards .card .bandh h3 {
+    font-size: 21px;
+}
+
+.main-3Cards .card .bandh button {
+    border-radius: 20px;
+    border: none;
+    padding: 13px 20px;
+    color: #fff;
+    background-color: rgb(245, 67, 67);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*********************************************************************************************************/
+
+/************************************** 3 Cards In Red Background **************************************/
+
+.main-redbg {
+    margin: 80px 95px 0px;
+    padding: 70px 40px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background: rgb(248, 62, 53);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-redbg .rbghandp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+.main-redbg .rbghandp h1 {
+    font-size: 45px;
+    text-align: center;
+    user-select: none;
+}
+
+.main-redbg .rbghandp p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    word-spacing: 2px;
+}
+
+.main-redbg .cardsWbg {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.main-redbg .card {
+    width: 30%;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-redbg .card img {
+    width: 125px;
+    height: 125px;
+    user-select: none;
+}
+
+.main-redbg .card h4 {
+    user-select: none;
+}
+
+.main-redbg .card p {
+    font-size: 17px;
+    color: rgb(0, 0, 0, 0.85);
+    line-height: 22px;
+}
+
+.main-redbg .card .cardhandp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+/*********************************************************************************************************/
+
+/************************************** Body Part 4 Airport Parking *************************************/
+
+.Body-Part-4 {
+    margin: 80px 80px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Body-Part-4 .Heading-Airport-Parking {
+    text-align: center;
+    font-size: 19px;
+}
+
+.Body-Part-4 .main-four-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.Body-Part-4 .main-four-cards .four-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 23%;
+    padding: 0 0 20px 0;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 15px 15px 0 0;
+}
+
+.Body-Part-4 .main-four-cards .four-card .img1 {
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(Body-Part-4-Airport-Parking/DaysInn\(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Body-Part-4 .main-four-cards .four-card .img2 {
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(Body-Part-4-Airport-Parking/DaysInn\(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Body-Part-4 .main-four-cards .four-card .img3 {
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(Body-Part-4-Airport-Parking/Build\(3\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Body-Part-4 .main-four-cards .four-card .img4 {
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(Body-Part-4-Airport-Parking/HomeSuit\(4\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.Body-Part-4 .main-four-cards .four-card .heading-para-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    user-select: none;
+}
+
+.Body-Part-4 .main-four-cards .four-card button {
+    border-radius: 20px;
+    border: none;
+    padding: 11px 25px;
+    color: #fff;
+    background: rgb(230, 15, 15);
+    user-select: none;
+    cursor: pointer;
+}
+
+/*********************************************************************************************************/
+
+/************************************ Body Part 5 Annonymus Message ************************************/
+
+.annonymus-msg {
+    margin: 80px 80px;
+    padding: 30px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    width: 44%;
+    border-radius: 15px;
+}
+
+.annonymus-msg .main-prof-img-and-spans {
+    display: flex;
+    gap: 15px;
+}
+
+.annonymus-msg span {
+    line-height: 20px;
+    user-select: none;
+}
+
+.annonymus-msg h4 {
+    position: relative;
+    left: 6px;
+    user-select: none;
+}
+
+.annonymus-msg .prof-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(238, 175, 185);
+    background-image: url(Body-Part-5-Annonymus-Message/user-regular.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;
+}
+
+.annonymus-msg .panda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    user-select: none;
+}
+
+.annonymus-msg .panda a {
+    text-decoration: none;
+    color: rgb(230, 15, 15);
+    user-select: none;
+}
+
+/*********************************************************************************************************/
+
+/**************************************** Body Part 6 Interesting Reads ********************************/
+
+.Body-Part-6-Cards {
+    margin: 45px 50px 50px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Body-Part-6-Cards .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 15px 15px 0 0;
+    padding: 0 0 20px 0;
+    width: 30%;
+    gap: 50px;
+}
+
+.Body-Part-6-Cards .card .img1 {
+    width: 100%;
+    height: 215px;
+    background-color: #fff;
+    background-image: url(Body-Part-6-Interesting-Reads/Cars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+
+.Body-Part-6-Cards .card .img2 {
+    width: 100%;
+    height: 215px;
+    background-color: #fff;
+    background-image: url(Body-Part-6-Interesting-Reads/App1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+
+.Body-Part-6-Cards .card .img3 {
+    width: 100%;
+    height: 215px;
+    background-color: #fff;
+    background-image: url(Body-Part-6-Interesting-Reads/Manual.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.Body-Part-6-Cards .card .bandh {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    gap: 25px;
+    user-select: none;
+    margin-left: 10px;
+}
+
+.Body-Part-6-Cards .card .bandh a {
+    text-decoration: none;
+    color: rgb(230, 15, 15);
+}
+
+/*********************************************************************************************************/
+
+/************************************ Body-part-7-Hand-Shake-Background *********************************/
+
+.background-hand-shake {
+    background-image: url(Body-part-7-Hand-Shake-Background/Hand-Shake.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 70px 70px;
+    border-radius: 10px;
+    height: 550px;
+    gap: 80px;
+}
+
+.background-hand-shake h1 {
+    font-size: 50px;
+    user-select: none;
+}
+
+.background-hand-shake p {
+    font-size: 20px;
+    user-select: none;
+}
+
+.background-hand-shake button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(221, 52, 52);
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*********************************************************************************************************/
+
+/************************************ Body Part 8 Input With Subscribe **********************************/
+
+.part8 {
+    background-color: rgb(227, 242, 248);
+    width: 1200px;
+    height: 230px;
+    position: relative;
+    margin-bottom: 10px;
+    left: 70px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.part8 h2 {
+    position: absolute;
+    top: 38px;
+    left: 500px;
+    font-size: 33px;
+}
+
+.part8 p {
+    position: absolute;
+    top: 90px;
+    left: 400px;
+    font-size: 22px;
+    color: gray;
+}
+
+.part8 input {
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 15px;
+    border: 1px solid lightgray;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.part8 input:focus {
+    outline: 1px solid lightgray;
+}
+
+.part8 button {
+    position: absolute;
+    top: 150px;
+    left: 680px;
+    height: 50px;
+    width: 130px;
+    background-color: rgb(250, 60, 60);
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.hr {
+    border: 2px solid red;
+}
+
+/*********************************************************************************************************/
+
+/************************************************ Footer ***********************************************/
+
+footer {
+    margin: 40px 80px;
+    user-select: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin: 0px 50px 20px;
+}
+
+.footer h3 {
+    color: red;
+}
+
+.footer p {
+    color: rgb(90, 92, 247);
+}
+
+.footer .aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer .company {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer .company p {
+    line-height: 28px;
+}
+
+.footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    color: rgb(90, 92, 247);
+    gap: 15px;
+}
+
+.footer .contact-info div {
+    padding-left: 25px;
+}
+
+.footer .contact-info .email {
+    background-image: url(Footer/envelope-regular.svg);
+    background-repeat: no-repeat;
+}
+
+.footer .contact-info .phone {
+    background-image: url(Footer/phone-solid.svg);
+    background-repeat: no-repeat;
+}
+
+.footer .contact-info .location {
+    background-image: url(Footer/location-dot-solid.svg);
+    background-repeat: no-repeat;
+}
+
+.footer .contact-info .contact {
+    background-image: url(Footer/headphones-solid.svg);
+    background-repeat: no-repeat;
+}
+
+.footer .payment {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer .payment .PowerStripe {
+    width: 150px;
+    height: 35px;
+}
+
+.footer .payment .social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .payment .social img {
+    width: 25px;
+    height: 25px;
+}
+
+.intro {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(90, 92, 247);
+    user-select: none;
+}
+
+.msg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(Footer/message-regular.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(250, 84, 8);
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+}
